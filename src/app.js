@@ -41,3 +41,7 @@ database()
     console.error("Error connecting to the database", err);
     process.exit(1);
   });
+
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
